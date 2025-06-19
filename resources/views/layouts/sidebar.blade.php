@@ -763,7 +763,7 @@
                             </li>
                         @endcan
                         @can('Manage Website Settings')
-                            <li>
+                            <!-- <li>
                                 <a href="{{ route('admin.setting.website-settings.index') }}"
                                    class="{{ $activeManageWebsiteSetting ?? '' }} d-flex align-items-center cg-10">
                                     <div class="d-flex">
@@ -781,7 +781,7 @@
                                     </div>
                                     <span class="">{{ __('Website Settings') }}</span>
                                 </a>
-                            </li>
+                            </li> -->
                         @endcan
                         @can('Manage Newsletter')
                             <li>
@@ -825,7 +825,7 @@
                         @endcan
                         @can('Manage Application Setting')
                             <li>
-                                <a href="#manage-application-menu" data-bs-toggle="collapse" role="button"
+                                <!-- <a href="#manage-application-menu" data-bs-toggle="collapse" role="button"
                                    aria-expanded="{{ isset($showManageApplicationSetting) ? 'true' : '' }}"
                                    aria-controls="manage-application-menu"
                                    class="d-flex align-items-center cg-10 {{ isset($showManageApplicationSetting) ? 'active' : 'collapsed' }}">
@@ -841,7 +841,7 @@
                                         </svg>
                                     </div>
                                     <span class="">{{ __('Application Settings') }}</span>
-                                </a>
+                                </a> -->
                                 <div class="collapse {{ $showManageApplicationSetting ?? '' }}"
                                      id="manage-application-menu"
                                      data-bs-parent="#sidebarMenu">
